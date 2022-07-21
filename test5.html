@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单：为了收集用户信息 -->
+    <form>
+        <table>
+            <!-- text 文本框 用户可以向里面输入任何文字 -->
+            <!-- 在文本框中默认出现文字 使用value属性 -->
+            <tr><td><label for="username">用户名:</label></td><td><input type="text" id="username" name="名字" maxlength="6" /></td></tr><br>
+            <!-- password 密码框 看不见密码 -->
+            <tr><td><label for="password">密码:</label></td><td><input type="password" id="password" /></td></tr><br>
+        </table>
+        <!-- radio 单选按钮 实现多选一 -->
+        <!-- name 单选表单和复选框要有相同的name值，如男和女，只能选一个 -->
+        <!-- value 和 name 为后台使用 -->
+        <!-- checked 针对单选表单和复选框 打开页面默认勾选男 -->
+        <!-- label 增加用户体验 鼠标点击文字也能选择按钮 -->
+        性别：<label for="man">男</label><input type="radio" id="man" name="sex" value="男" checked="checked"/> 
+        <label for="girl"> 女</label><input type="radio" id="girl" name="sex" value="女"/><br>
+        <!-- checkbox 多选按钮 -->
+        爱好: <label for="WatchTV">看电视</label><input type="checkbox" id="WatchTV"/>
+         <label for="PlayGames">玩游戏</label><input type="checkbox" id="PlayGames"/>
+         <label for="sports">运动</label> <input type="checkbox" id="sports"/>
+        <br>
+        <!-- submit 点击后将表单域form里的表单元素数据发到服务端 -->
+        <input type="submit" value="免费注册">
+        <!-- reset 重置按钮 还原表单默认状态 -->
+        <input type="reset" value="重新填写">
+        <!-- button 普通按钮 后面结合js-->
+        <input type="button" value="点击获取验证码">
+        <!-- file 文件域 上传文件 -->
+        <input type="file" value="上传头像">
+
+    </form>
+</body>
+</html>

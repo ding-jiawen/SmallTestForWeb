@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 类选择器 */
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+        }
+        /* 标签选择器 */
+        h4 {
+            color: rgb(246, 33, 33);
+        }
+        /* id选择器 */
+        /* 注意是#开头 */
+        #nice {
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <!-- 多类名选择 中间必须要有空格 -->
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+    <h4>红绿蓝</h4>
+    <!-- 一个id只能使用一次意思是这个id只能被一个元素拥有，从效果上来看虽然是可以使用多次 例如下面两行字都会有效果-->
+    <!-- 但是配合js使用时，只有第一次出现的id会有效果 -->
+    <!-- 所以 一个id只能使用一次是针对js解释的 -->
+    <!-- 实际开发中不要像下面那样写 -->
+    <h4 id="nice">红绿蓝</h4>
+    <h3 id="nice">红绿蓝</h3>
+    <h4>红绿蓝</h4>
+</body>
+</html>

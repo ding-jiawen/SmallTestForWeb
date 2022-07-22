@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>注册页面</h2>
+    <table>
+        <tr>
+            <td>性别</td>
+            <td>
+                <label for="man">男</label><input type="radio" id="man" name="sex" value="man">
+                <label for="woman">女</label><input type="radio" id="woman" name="sex" value="woman">
+            </td>
+                
+        </tr>
+        <tr>
+            <td>生日</td>
+            <td>
+                年<select>
+                    <option>请选择--</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                </select>
+                月<select>
+                    <option>请选择--</option>
+                    <option>12</option><option>11</option><option>10</option>
+                    <option>9</option><option>8</option><option>7</option>
+                    <option>6</option><option>5</option><option>4</option>
+                    <option>3</option><option>2</option><option>1</option>
+                </select>
+                日<input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>婚姻状况</td>
+            <td>
+                <label for="unmarried">未婚</label><input type="radio" id="unmarried" name="marry" value="未婚">
+                <label for="divorce">离婚</label><input type="radio" id="divorce" name="marry" value="离婚">
+            </td>
+        </tr>
+        <tr>
+            <td>学历</td>
+            <td>
+                <select>
+                    <option>初中</option>
+                    <option>高中</option>
+                    <option>专科</option>
+                    <option selected="selected">本科</option>
+                    <option>研究生</option>
+                    <option>博士</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>喜欢的类型</td>
+            <td>
+                <label for="bright">聪慧的</label><input type="checkbox" id="bright">
+                <label for="filial">孝顺的</label><input type="checkbox" id="filial">
+                <label for="diligent">勤奋的</label><input type="checkbox" id="diligent">
+                <label for="young">小鲜肉</label><input type="checkbox" id="young">
+            </td>
+        </tr>
+        <tr>
+            <td>自我介绍</td>
+            <td><textarea cols="30" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="免费注册"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><a href="#" target="_blank">我是会员，点击登录</a> </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" checked="checked">我同意注册条款和会员加入标准</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* 外部样式表 */
+div {
+    font-family: 'Microsoft YaHei'; 
+    font-size: 16px;
+    /* 字体粗细 加粗400就行，注意不要加单位 纯数字 */
+    font-weight: 500;
+    /* 字体样式 italic为倾斜 */
+    font-style: italic;
+    color: hotpink;
+    text-align: left;
+    /* 文本修饰 如加上划线 下划线 删除线 */
+    text-decoration: line-through;
+    /* em相对单位，font-size一个文字的大小 */
+    text-indent: 2em;
+    /* 行间距 由上间距 文本高度 下间距组成 */
+    /* 文本高度不会改变，改变的是上，下间距 */
+    line-height: 100px;
+}

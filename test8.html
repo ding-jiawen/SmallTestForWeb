@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 亲儿子选择器 */
+        /* 孙子 重孙子之后的都不管， 注意用>号表示 */
+        .nav>a {
+            color: green;
+        }
+
+        /* 伪类选择器 如果四个都写，这四个顺序不可颠倒 */
+        /* 未点击过的链接 */
+        /* 注意写法 标签:xxx 冒号和名称不要由空格 */
+        .case1 a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* 点击过后，链接颜色变为写的颜色 表示你已经游览器链接内容 */
+        .case2 a:visited {
+            color: pink;
+            text-decoration: none;
+        }
+
+        /* 鼠标移到链接上时 变色 */
+        .case3 a:hover {
+            color: deepskyblue;
+            text-decoration: none;
+        }
+
+        /* 在点击和松开鼠标那个时间段变色 */
+        .case4 a:active {
+            color: red;
+        }
+
+        /* focus类选择器  获得光标的表单*/
+        /* 记住写法 input:focus */
+        input:focus {
+            /* input表单背景色 */
+            background-color: gray;
+            /* 光标及输入文字颜色 */
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">this is a son</a>
+        <p>
+            <a href="#">this is a grandson</a>
+        </p>
+    </div>
+    <div class="case1">
+        <a href="https://www.baidu.com/" target="_blank">百度</a>
+    </div>
+    <div class="case2">
+        <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+    </div>
+    <div class="case3">
+        <a href="https://www.runoob.com/" target="_blank">菜鸟</a>
+    </div>
+    <div class="case4">
+        <a href="https://www.icourse163.org/" target="_blank">慕课</a>
+    </div>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

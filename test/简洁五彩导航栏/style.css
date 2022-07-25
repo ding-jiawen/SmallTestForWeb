@@ -1,0 +1,41 @@
+.nav a {
+    /* inline-block 行内块元素 既能设置高度宽度 也让它们在同一行显示 */
+    display: inline-block;
+    width: 120px;
+    height: 58px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 48px;
+}
+
+/* 鼠标移动到单个超链接行内块元素变色 */
+/* 音乐 */
+.nav .music {
+    background-image: url(../../images/red.jpg);
+}
+.nav .music:hover {
+    background-image: url(../../images/orange.jpg);
+}
+/* 电影 */
+.nav .movie {
+    background-image: url(../../images/skyblue.jpg);
+}
+.nav .movie:hover {
+    background-image: url(../../images/purple.jpg);
+}
+/* 动漫 */
+.nav .cartoon {
+    background-image: url(../../images/green.jpg);
+}
+.nav .cartoon:hover {
+    background-image: url(../../images/red.jpg);
+}
+/* 电视剧 */
+.nav .SoapOpera {
+    background-image: url(../../images/orange.jpg);
+}
+.nav .SoapOpera:hover {
+    background-image: url(../../images/purple.jpg);
+}

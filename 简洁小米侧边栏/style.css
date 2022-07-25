@@ -1,0 +1,19 @@
+/* 1.将a行内元素转换为块级元素 */
+a {
+    display: block;
+    width: 240px;
+    height: 40px;
+    background-color: rgb(63,61,61);
+    color: rgb(245,245,245);
+    font-size: 14px;
+    /* 取消超链接下划线 */
+    text-decoration: none;
+    /* 缩进 后面一般用设置页边距实现 */
+    text-indent: 2em;
+    /* 文字垂直居中 行高为上间距+文本高度+下间距  */
+    /* 让行高等于该块元素的height，即上间距和下间距把文字挤到中间去了 */
+    line-height: 40px;
+}
+a:hover {
+    background-color: rgb(255,103,0);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 用背景图片的方式插入图片便于设置图片大小位置等等信息 */
+            /* 背景图片的完整程度取决于设置的高宽 */
+            /* 如果设置的高宽大于图片本身的高宽 能展现出完整图片 */
+            width: 600px;
+            height: 600px;
+            /* 背景颜色 背景图片是压着背景颜色的 */
+            /* rgba a alpha 透明度 范围0~1 */
+            background-color: rgba(0, 255, 255, 0.3);
+            background-image: url(../images/logo.png);
+            /* 背景平铺  no-repeat 不重复平铺  */
+            /* 当设置的高宽过大还有空隙 图片会重复平铺在div里 */
+            /* 默认情况下时平铺的 */
+            background-repeat: no-repeat;
+            /* 沿着x轴平铺 background-repeat: repeat-x; */
+            /* y :repeat-y */
+
+            /* background-position 背景图片位置  */
+            /* 水平 left center right */
+            /* 垂直 top center bottom */
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

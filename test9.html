@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 取消文字超链接下划线 */
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            height: 50px;
+            font-weight: 700px;
+            background-color: orange;
+            /*  display：block 行内元素不可直接设置高度和宽度，要转换为块内元素 */
+            display: block;
+            /* 取消当鼠标移到超链接时的下划线 */
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块级元素一行只能放一个块级元素 可以设置高度宽度  块级元素可以包含块级元素-->
+    <!-- 常用块级元素 三大列表和表格、六大标题和表单、段落地址要分块。 -->
+    <!-- 行内元素一行可以放多个行内元素 不可以直接设置高度宽度 注意是不可以直接 要转换为块内元素 行内元素不可包含块级元素 -->
+    <!-- 常用行内元素 a、span、i、strong、em、label、cite、code -->
+    <!-- 行内块元素 和块元素特性一样 但是它不独占一行 -->
+    <!-- 常用行内块元素 img、input、select、textarea、button -->
+    <div>
+        <span>
+            <a href="https://www.mi.com/index.html" target="_blank">小米手机</a>
+        </span>
+    </div>
+
+</body>
+
+</html>

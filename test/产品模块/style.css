@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+}
+.info h4 {
+    display: inline-block;
+    font-weight: 400;
+}
+.info {
+    font-size: 14px;
+    margin-top: 14px;
+    padding: 0 15px;
+}
+.info span {
+    color: orange;
+}
+.box {
+    width: 298px;
+    height: 360px;
+    background-color: #fff;
+    /* auto 可让水平居中 */
+    margin: 100px auto;
+}
+/* 图片宽度和父亲一样宽 */
+.box img {
+    width: 100%;
+}
+.review {
+    height: 30px;
+    font-size: 14px;
+    padding: 15px;
+    margin-top: 5px;
+}
+.appraise {
+    font-size: 11px;
+    color: #cdcdcd;
+    padding: 0 15px;
+}
